@@ -10,12 +10,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
-    }
-}
-buildscript{
-    dependenices{
-        implementation 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
 rootProject.name = "ComponentHome"
