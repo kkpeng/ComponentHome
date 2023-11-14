@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+buildscript{
+    dependenices{
+        implementation 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+    }
+}
+rootProject.name = "ComponentHome"
+include ':app'
+include ':module_home'
